@@ -1,0 +1,26 @@
+
+    <div *ngIf="user && user.length>0" class="data">
+        <div *ngFor="let userData of user" class="userData">
+            <div>
+                <input type="text" name="name" [ngModel]="userData.name">
+    
+            </div>
+            <div>
+                <input type="text" name="name" [ngModel]="userData.username">
+    
+            </div>
+    
+            <div>
+                <input type="text" name="name" [ngModel]="userData.email">
+    
+            </div>
+            <div>
+                <input type="text" name="name" [ngModel]="userData.phone">
+    
+            </div>
+            <div>
+                <input type="text" name="name" [ngModel]="userData.website">
+    
+            </div>
+        </div>
+    </div>
